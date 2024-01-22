@@ -1,0 +1,27 @@
+<div class="tekstselgit2">
+<span>Kirjuta kaebust:</span> &nbsp;
+</div>
+
+
+<!-- Using NgModel Method -->
+<!-- <input type="text" [(ngModel)]="values" #ref> &nbsp; -->
+
+<!-- Using ViewChild Method -->
+<input type="text" #ref> &nbsp;
+
+<button (click)="add()" class="nupp">Lisa!!!</button> &nbsp;
+
+<button (click)="clear()" class="nupp">Tühjenda?</button> <br><br>
+
+<div class="tekstselgit3">
+Kaebus:
+</div>
+
+<button (click)="empty()" class="nupp2">Tühista kaebus</button> <br><br>
+
+
+<div class="tekstselgit3">
+<span *ngFor="let message of this.messageService.message">{{message}}<br></span>
+</div>
+
+ 

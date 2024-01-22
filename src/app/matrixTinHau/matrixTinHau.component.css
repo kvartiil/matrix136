@@ -1,0 +1,28 @@
+code {
+  background: rgba(61, 107, 177, 0.12);
+  color: #d1177d;
+  vertical-align: middle;
+  box-shadow: inset 0 -2px rgba(61, 107, 177, 0.25);
+  padding: 6px 8px;
+  font-size: 14px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.nupp {
+  /**padding-left: 20px;**/
+  padding: 6px 6px 6px 6px;
+  margin: 6px 8px 6px 20px;
+  min-width: 270px;
+  border-radius: 3px;
+  font-size: 14px;
+  /**float: left;**/
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration:none;
+  border: none;
+  outline: none;
+  color : #f1eaea;
+  background-color: rgba(30, 20, 75, 0.96);
+
+}

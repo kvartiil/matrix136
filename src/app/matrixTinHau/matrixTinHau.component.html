@@ -1,0 +1,53 @@
+<!--h1>
+How many inputs do you see? 😉
+</h1>
+This is static text
+<seamless-input>
+<input [(ngModel)]="first">
+</seamless-input>
+
+<h2>
+Try to find
+<seamless-input>
+  <input [(ngModel)]="second">
+</seamless-input>
+here
+</h2>
+
+<h3>
+NG-237:
+<seamless-input>
+  <input [(ngModel)]="third">
+</seamless-input>
+</h3>
+<p>
+You can {{tryki()}} even use it to edit things directly
+inside a <strong>
+<seamless-input>
+  <input [(ngModel)]="fourth">
+</seamless-input>
+</strong>. All <strong>
+<seamless-input>
+  <input [(ngModel)]="fifth">
+</seamless-input>
+</strong--> 
+
+<button (click)="onclick()" type="button" class="nupp">
+{{ReadMore?"Juhenda konsultanti!":"Varja juhtnöör"}}
+</button>
+
+
+<ng-container *ngIf="visible">
+
+<div class="tekstselgit2">
+  
+Siia paar suunavat sõna:{{tryki()}}
+</div>
+<br>
+<code>
+<seamless-input>
+  <input [(ngModel)]="sixth">
+</seamless-input>
+</code> 
+
+</ng-container>

@@ -1,0 +1,16 @@
+
+  
+          
+          <button (click)="onclick()" type="button" class="nupp">
+            {{ReadMore?"Juhtmõte konsultandile":"Peida juhtmõte (igaks juhuks)"}}
+          </button>
+  
+          <ng-container *ngIf="visible">
+              <div class="tekstselgit2">
+                <br>   
+                {{ lantau() }}
+                  
+                  <!--div id="chart-pie"></div-->
+              </div>
+          </ng-container>
+  

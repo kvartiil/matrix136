@@ -1,0 +1,10 @@
+<div *ngIf="quote$ | async as quote" class="container">
+<blockquote class="quote-text">"{{ quote.quote }}" </blockquote>
+<p class="quote-author">-{{ quote.author}}</p>
+
+<div class="actions">
+  <button><a [href]="twitterUrl + quote.quote + ' -' + quote.author" target="_blank"><i class="fab fa-twitter"></i></a></button>
+  <button (click)="speak(quote)"><i class="fas fa-volume-up"></i></button>
+  <button (click)="getRandomQuote()">New Quote</button>
+</div>
+</div>

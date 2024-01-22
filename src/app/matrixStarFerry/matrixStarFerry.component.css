@@ -1,0 +1,86 @@
+span {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 25px;
+  text-align: center;
+  width: 25px;
+}
+
+
+#employees {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#employees td, #employees th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#employees tr:nth-child(even){background-color: #f2f2f2;}
+
+#employees tr:hover {background-color: #ddd;}
+
+#employees th {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: left;
+  background-color: rgb(30, 20, 75, 0.96);
+  color: #fff;
+}
+
+.nupp {
+  /**padding-left: 20px;**/
+  padding: 6px 6px 6px 6px;
+  margin: 6px 8px 6px 0px;
+  min-width: 270px;
+  border-radius: 3px;
+  font-size: 14px;
+  /**float: left;**/
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration:none;
+  border: none;
+  outline: none;
+  color : #f1eaea;
+  background-color: rgba(30, 20, 75, 0.96);
+
+}
+
+.tekstselgit {
+  color: rgb(30, 20, 75, 0.96);
+  font-size: 24px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.tekstselgit2 {
+  color: rgb(30, 20, 75, 0.96);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.alert  {
+  position: fixed;
+  top: 150px;
+  right: 0.5rem;
+  border:1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  padding: 2rem;
+  background: #fff;
+  color: #f65656;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+  transition:  all 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(1.25rem);
+}

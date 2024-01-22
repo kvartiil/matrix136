@@ -1,0 +1,44 @@
+
+<button (click)="onclick()" type="button" class="nupp">
+  {{ReadMore?"Näita lahendust":"Peida lahendus"}}
+</button>
+<br>
+
+<!--p>{{lapkok()}}</p-->
+
+<ng-container *ngIf="visible">
+
+
+
+<label>    
+  <div class="flashcard" [class.flipped]="flipped" (click)="toggle()">
+      <div class="front">
+        <span>Täiendava sisendina on muudetud laenude osakaalu, s.t. on võetud laenu juurde. Samuti on täiendava sisendina toodud lahendus, et ettevõte käive suureneb. Need sisendid on arvesse võetud ja käesolevas analüüsis sellest lähtutakse.</span>
+    </div>
+      <div [ngClass] ="{'back':lapkok() ==2 ,'back2':lapkok() ==4}" >
+      <!--div class="back"-->
+      <span>Laenu juurdevõtmine ei ole õige mõte, bilansistruktuuri hinnangut ja laenukoormust arvestades täiendavat laenu juurde võtta ei saa. Samas, kui on võimalik ettevõtte käivet suurendada, siis see on väga toetav ja asjakohane lahendus ning muudab ettevõtte seisu paremaks.</span>
+      <!--div class="back">N   "btn  btn-danger" ow showing the back size {{kirjuta()}}</div-->
+      </div>
+  </div>
+</label>
+
+</ng-container>
+
+
+
+<!--label>    
+<div class="flashcard" [class.flipped]="flipped" (click)="toggle()">
+    <div class="front">
+      <span>Täiendava sisendina on muudetud laenude osakaalu, s.t. on võetud laenu juurde. Samuti on täiendava sisendina toodud lahendus, et ettevõte käive suureneb. Need sisendid on arvesse võetud ja käesolevas analüüsis sellest lähtutakse.</span>
+  </div>
+    <div [ngClass] ="{'back':flagln ==2 ,'back2':flagln ==4}" >
+    <span>Laenu juurdevõtmine ei ole õige mõte, bilansistruktuuri hinnangut ja laenukoormust arvestades täiendavat laenu juurde võtta ei saa. Samas, kui on võimalik ettevõtte käivet suurendada, siis see on väga toetav ja asjakohane lahendus ning muudab ettevõtte seisu paremaks.</span>
+    
+    </div>
+</div>
+</label-->
+
+<div [ngClass] ="{'bodyClass2':flagln ==2 ,'bodyClass1':flagln ==3, 'bodyClass3':flagln ==4}" > <br>
+  
+</div>

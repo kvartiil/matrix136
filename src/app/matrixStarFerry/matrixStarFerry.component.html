@@ -1,0 +1,46 @@
+<!--span
+  *ngFor="let star of stars; let i = index"
+  (click)="rate(i + 1)"
+>
+  <ng-container *ngIf="star; else noStar">⭐</ng-container>
+  <ng-template #noStar>★</ng-template>
+</span-->
+
+
+
+<div class="container mt-5">
+  <div class="row">
+      <div class="col-md-12">
+  
+          <!---will create button with ternary operator and click function--->
+          <button (click)="onclick()" type="button" class="nupp">
+            {{ReadMore?"Hinda siis konsultanti!":"Varja hinnang"}}
+          </button>
+          <br>
+  
+          <!--will create if condition my default it will
+            b hide on click it will toggle--->
+          <ng-container *ngIf="visible">
+              
+            <span
+            *ngFor="let star of stars; let i = index"
+            (click)="rate(i + 1)"
+          >
+            <ng-container *ngIf="star; else noStar">⭐</ng-container>
+            <ng-template #noStar>★</ng-template>
+          </span>
+
+
+          </ng-container>
+  
+  
+  
+  
+      </div>
+  </div>
+  </div>
+
+
+  <div class="alert" [class.visible]="isVisible"> 
+    Hinda vaid siis, kui oled konsultanti ka kasutanud! Praegu sa ei ole...
+  </div>

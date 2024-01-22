@@ -1,0 +1,114 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.clck {
+  display: block;
+  /**display: inline-block;**/
+  /**float: left;**/
+  min-width: 350px;
+  max-width: 800px;
+  height: 20px;
+  margin: 0 auto;
+  color: rgb(30, 20, 75, 0.96)ed;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.clck2 {
+
+/**color: red;**/
+margin-left: 300px;
+margin-right: 50px;
+color: rgb(30, 20, 75, 0.96);
+font-size: 16px;
+font-weight: 700;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.slider {
+color: yellowgreen;
+
+}
+
+.tekstselgit {
+  color: rgb(30, 20, 75, 0.96);
+  font-size: 24px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.selector {
+  color: red;
+}
+
+.tekstselgitItal {
+  color: rgb(30, 20, 75, 0.96);
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.tekstselgit2 {
+  color: rgb(30, 20, 75, 0.96);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  /**background-color: blueviolet;**/
+}
+
+.tekstselgit3 {
+  color: rgb(30, 20, 75, 0.96);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 55px;
+  margin-right: 20px;
+  margin-bottom: -22px;
+  /**background-color: blueviolet;**/
+}
+
+mat-slider {
+  width: 500px;
+  margin-left: 40px;
+  /**height: 40px;**/
+  /**margin-top: 2px;**/
+  background-color: rgba(99, 82, 250, 0.5);
+  color: rgb(30, 20, 75, 0.96);
+}
+
+mat-slider > .mat-slider-vertical {
+  height: 3000px;
+  margin-left: 45px;
+}
+
+mat-slider-track-fill {
+  background-color: red !important;
+}
+
+mat-slider-thumb-label {
+  background-color: red !important;
+
+}
+
+.mat-slider-thumb {
+  background-color: red !important;
+}
+
+mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+  background-color: blue;
+}
+
+.mat-slider-min-value:not(.mat-slider-thumb-label-showing) .mat-slider-thumb {
+  background-color: white;
+}
+
+
+/**@import '~@angular/material/prebuilt-themes/indigo-pink.css'; **/

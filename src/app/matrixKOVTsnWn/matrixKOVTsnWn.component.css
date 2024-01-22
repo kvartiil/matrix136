@@ -1,0 +1,22 @@
+#starferry {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#starferry td, #starferry th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#starferry tr:nth-child(even){background-color: #f2f2f2;}
+
+#starferry tr:hover {background-color: #ddd;}
+
+#starferry th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(67, 37, 201, 0.8);
+  color: #fff;
+}

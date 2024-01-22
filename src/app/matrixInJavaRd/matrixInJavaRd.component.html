@@ -1,0 +1,35 @@
+<br>
+
+<div class="tekstselgitItal">
+  Rentaablus ja Efektiivsus
+</div>
+<br>
+<div class="tekstselgit2">
+
+  Efektiivus ja rentaablus on sisuliselt "sama mündi kaks külge".  Efektiivsus näitab varade kasutamise efektiivsust, on eelkõige bilansiline näitaja. Rentaablus näitab, kui tasuvalt suudetakse turul tegutseda, on pigem kasumiaruande pealt tulev näitaja. Rentaablus "liigutab" ennast kiiremini, kuna kasumiaruanne registreerib ettevõtte muutuva seisu koheselt. Efektiivsus kajastub teatud ajalise viivitusega, kuna bilanssi jõuab mõju mõnevõrra hiljem. Bilansi pool on paremini prognoositav, seega on bilansi mudelid mõnevõrra täpsemad. <br><br> Alljärgnevalt on võimalik muuta ettevõtte efektiivsust ja rentaablust ning näha, mida süsteem sellest arvab. Efektiivsust ja rentaablust saab muuta 100 punkti skaalas. Koondhinnanguks on nende keskmine.
+
+</div>
+
+<br>
+
+<div class="tekstselgit3">
+Efektiivsus (lähteseis: {{ modelEfektJR * 100}})
+</div>
+
+<mat-slider (input)="getPrecio($event)"
+   min="0" max="100" step="1" value="{{ precio }}" ></mat-slider>
+
+<br><br>
+
+<div class="tekstselgit3">
+Rentaablus (lähteseis: {{ modelRentJR * 100}})
+</div>
+
+
+<mat-slider (input)="getComision($event)"
+   min="0" max="100" step="1" value="{{ comision }}" ></mat-slider>
+
+
+<div class="tekstselgit2">
+<p>Koondhinnang: {{ valorFinal }} (Efektiivsus: {{ precio }} + Rentaablus: {{ comision }})</p>
+</div>

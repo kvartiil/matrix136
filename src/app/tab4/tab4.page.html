@@ -1,0 +1,113 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Täiendavad sisendid
+    </ion-title>
+  </ion-toolbar>
+  </ion-header>
+  
+  <ion-content [fullscreen]="true">
+  
+  <ion-button routerLink="/subpage3">Analüüs
+  <ion-icon slot="start" name="star"></ion-icon>
+  </ion-button>
+  <ion-button routerLink="/subpage3a">Räägi robotiga
+  <ion-icon slot="start" name="star"></ion-icon>
+  </ion-button>
+  
+  <br>
+  <br>
+  <!--h3>Siia siis toodame sisu neljanda tabi jaoks</h3-->
+  
+  <div class="tekstselgit">  
+  Täiendava info sisestamine {{ lahtejutt() }}
+  </div>
+  <br>
+
+  <div class="tekstselgit2">  
+  Siia võib sisestada andmeid ja mõtteid (soove ja unelmaid), mida oleks võimalik täiendavas analüüsis kasutada...
+  </div>
+
+  <br>
+  <div class="tekstselgit2">  
+  Kahte liiki võimalikud sisendit:<br>
+  - sisend enda poolt;<br>
+  - sisend konsultandi poolt.
+  </div>
+
+  <br>
+  <div class="tekstselgit">  
+    Täiendava info sisestamine
+  </div>
+  <br>
+  <div class="tekstselgit2">  
+    Siia saab sisestada informatsiooni enda poolt.
+  </div>
+  <matrix-inclcktw></matrix-inclcktw>
+  <br>
+  <br>
+  <!--matrix-autochart></matrix-autochart-->
+  <matrix-javard></matrix-javard>
+  <matrix-javard2></matrix-javard2>
+  <br>
+  
+  <matrix-ferrypier></matrix-ferrypier>
+  <!--matrix-clientinput></matrix-clientinput-->
+  <matrix-central></matrix-central>
+  <div class="tekstselgit">  
+  Konsultandi kaasamine
+  </div>
+  <br>
+  <div class="tekstselgit2">  
+    Käesoleva süsteemi tulemuste tõlgendamiseks võib kaasata konsultandi. Konsultandi kaasamise korral jagatakse konsultandiga infot, mida süsteem on ettevõtte kohta leidnud. Konsultandi kaasamiseks saab vajutada alltoodud nupule. Siis avaneb eraldi nupp info jagamiseks.  Konsultandi kaasamise nuppu teistkordselt vajutades on võimalik konsultant eemaldada, samas juba jagatud informatsioon on ikkagi välja läinud.
+  </div>
+
+  <br>
+
+  <div class="tekstselgit2">
+  Konsultant on kahtlemata tark, kuid paar suunavat sõna ei tee halba...
+
+  </div>
+  <matrix-tinhau></matrix-tinhau>  
+  <br>
+  <br>
+  <div class="tekstselgit2"> 
+  Siitkaudu saad konsultandi jutule...
+  </div>  
+  
+  <button (click)="onclick()" type="button" class="nupp">
+  {{ReadMore?"Too konsultant sisse":"Vallanda konsultant"}}
+  </button>
+  
+
+  <ng-container *ngIf="visible">
+
+    
+
+  <ion-button routerLink="/subpageTamar">Jaga ettevõtlusnalja</ion-button>
+  
+  </ng-container>
+  <br><br>
+  <div class="tekstselgit2"> 
+  Alljärnevalt on võimalik anda konsultandile hinnang, kas oli hea, vedas vaevu välja või oli tegemist suht katastroofiga. <br>
+  <matrix-starferry></matrix-starferry>
+  
+  </div>
+
+  <br>
+  <div class="tekstselgit2"> 
+  Tagasiside on kõige alus, see on oluline. Alljärgnevalt on võimalik anda tagasisidet konsultandi ülemusele. Tagasisidestus teeb konsultandi õnnelikuks.<br>
+  
+  </div>
+
+  <button (click)="onclick2()" type="button" class="nupp">
+  {{ReadMore2?"Kaeba konsultandi peale":"Salasta kaebus"}}
+  </button>
+
+  
+  <ng-container *ngIf="visible2">
+  <ion-button routerLink="/subpageComplaint">Alusta kaebust</ion-button>
+  <!--matrix-inclcktw></matrix-inclcktw-->
+  </ng-container>
+ 
+  </ion-content>

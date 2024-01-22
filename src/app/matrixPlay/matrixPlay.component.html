@@ -1,0 +1,31 @@
+<div class="container mt-5">
+  <div class="row">
+      <div class="col-md-12">
+
+          <!---will create button with ternary operator and click function--->
+          <button (click)="onclick()" type="button" class="nupp">
+            {{ReadMore?"Näita lähteseisu":"Peida lähteseis"}}
+          </button>
+
+          <!--will create if condition my default it will
+            b hide on click it will toggle--->
+          <ng-container *ngIf="visible">
+              <div class="tekstselgit2">
+                <br>   
+                {{ lantau() }}
+                  
+                  <!--div id="chart-pie"></div-->
+              </div>
+          </ng-container>
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+<div class="col-6">
+  <div id="chart-pie"></div>
+  </div>

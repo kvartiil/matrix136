@@ -1,0 +1,57 @@
+.container {
+  max-width: 500px;
+  width: 80%;
+  margin: auto;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 50px 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.quote-text {
+  font-size: 1.75em;
+  margin-bottom: 0;
+}
+
+.quote-author {
+  font-size: 1.2em;
+  font-weight: 300;
+  text-align: right;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+button {
+  padding: 0.5em 0.7em;
+  font-size: 0.9em;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  margin-right: 1em;
+}
+
+button:hover {
+  background-color: bisque
+}
+
+button:focus {
+  outline: none;
+}
+
+@media(max-width: 400px) {
+  .quote-text {
+    font-size: 1.3em;
+  }
+  .quote-author {
+    font-size: 1em;
+  }
+}
